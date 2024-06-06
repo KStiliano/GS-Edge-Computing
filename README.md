@@ -6,7 +6,7 @@
     <li>Kayky Silva Stiliano (RM555148)</li>
 </ul>
  
-<img src="https://raw.githubusercontent.com/gh-johnny/iot-display-lcd-sensors/main/docs/assets/project-printscreen.png" alt="print do circuito Arduino/printscreen Arduino circuit"/>
+<img src="https://github.com/KStiliano/GS-Edge-Computing/blob/main/arduino-sketch.png" alt="print do circuito Arduino/printscreen Arduino circuit"/>
 
 ## Explicação do Projeto 📖
 Um programa que mede:
