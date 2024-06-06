@@ -200,27 +200,6 @@ const int ledG = 11;
 <hr>
 
  ## Funções 🛠️
-`displayTwoLineText()`: Exibe duas linhas de texto no LCD.
-
-`activateWhichLED()`: Ativa um LED específico e desativa os outros.
-
-`sonarBeep()`: Emite um sinal sonoro pelo buzzer.
-
-`rotacaoServoMotor()`: Controla a rotação do servo motor.
-
-`testaLuminosidade()`: Lê o valor do sensor LDR, exibe no LCD e acende LEDs conforme a leitura.
-
-`testaOxigenio()`: Lê a umidade do sensor DHT (simulando a leitura de oxigênio), exibe no LCD e acende LEDs conforme a leitura.
-
-`testaTemperatura()`: Lê a temperatura do sensor DHT, exibe no LCD e acende LEDs conforme a leitura.
-
-`read_pH()`: Lê o valor do sensor de pH, exibe no LCD e acende LEDs conforme a leitura.
-
-`read_Gas_CO2()`: Lê o valor do sensor de gás CO2, exibe no LCD e acende LEDs conforme a leitura.
-
-`read_Gas_CH4()`: Lê o valor do sensor de gás CH4, exibe no LCD e acende LEDs conforme a leitura.
-
-`read_Proximidade()`: Lê a distância medida pelo sensor de proximidade, exibe no LCD e acende LEDs conforme a leitura.
 
 ```c
 void displayTwoLineText(String str1, String str2) {
@@ -234,9 +213,11 @@ void displayTwoLineText(String str1, String str2) {
 <hr>
  
 Objetivo: Exibe duas linhas de texto no LCD.
+<br>
 Parâmetros:
 `str1`: Texto para a primeira linha.
 `str2`: Texto para a segunda linha.
+<br>
 Ação: Limpa o LCD e exibe `str1` na linha 1 e `str2` na linha 2.
  
 ```c
@@ -250,8 +231,10 @@ void activateWhichLED(int led) {
 <hr>
  
 Objetivo: Liga um LED específico e desliga os outros.
+<br>
 Parâmetros:
 `led`: O pino do LED a ser ligado.
+<br>
 Ação: Desliga todos os LEDs e liga o LED especificado.
  
 ```c
@@ -267,8 +250,9 @@ void sonarBeep(int qntdBeeps = 3) {
 <hr>
  
 Objetivo: Emite um sinal sonoro pelo buzzer.
-Parâmetros:
-`qntdBeeps`: Número de bipes (padrão é 3).
+<br>
+Parâmetros: `qntdBeeps`: Número de bipes (padrão é 3).
+<br>
 Ação: Emite um tom de 1000 Hz por 2 segundos, espera 1 segundo, e repete.
  
 ```c
@@ -289,7 +273,9 @@ void rotacaoServoMotor(int velocidade = 5) {
 <hr>
  
 Objetivo: Controla a rotação do servo motor simulando a partida e do servo motor do drone.
+<br>
 Parâmetros: `velocidade`: Velocidade da rotação (padrão é 5).
+<br>
 Ação: Incrementa ou decrementa a posição do servo motor a cada interval (20 ms), invertendo a direção ao atingir 0 ou 180 graus. Conta rotações.
  
 ```c
@@ -323,8 +309,8 @@ void testaLuminosidade() {
 <hr>
  
 Objetivo: Lê o valor do sensor LDR e determina o estado da luminosidade.
-Ação:
-Lê o valor do LDR (convertido para um percentual de 0 a 100%).
+<br>
+Ação: Lê o valor do LDR (convertido para um percentual de 0 a 100%).
 Exibe o valor no LCD.
 Ativa um LED baseado no valor:
 Verde se `valor_ldr >= 70`.
@@ -364,6 +350,7 @@ void testaOxigenio() {
 <hr>
 
 Objetivo: Lê o valor de umidade do sensor DHT, simulado como oxigênio.
+<br>
 Ação: Lê a umidade e converte para mg/L (0 a 15).
 Exibe o valor no LCD.
 Ativa um LED baseado no valor:
@@ -403,6 +390,7 @@ void testaTemperatura() {
 <hr>
 
 Objetivo: Lê a temperatura do sensor DHT.
+<br>
 Ação: Lê a temperatura em graus Celsius.
 Exibe o valor no LCD.
 Ativa um LED baseado no valor:
@@ -441,6 +429,7 @@ void read_pH() {
 <hr>
 
 Objetivo: Lê o valor do sensor de pH.
+<br>
 Ação: Lê o valor do pino analógico (0 a 1023) e converte para pH (0 a 14).
 Exibe o valor no LCD.
 Ativa um LED baseado no valor:
@@ -473,6 +462,7 @@ void read_Gas_CO2() {
 <hr>
 
 Objetivo: Lê o valor do sensor de gás CO2.
+<br>
 Ação: Lê o valor do pino analógico (convertido para um percentual de 0 a 100%).
 Exibe o valor no LCD.
 Ativa um LED baseado no valor:
@@ -505,6 +495,7 @@ void read_Gas_CH4() {
 <hr>
 
 Objetivo: Lê o valor do sensor de gás CH4.
+<br>
 Ação: Lê o valor do pino analógico (convertido para um percentual de 0 a 100%).
 Exibe o valor no LCD.
 Ativa um LED baseado no valor:
@@ -548,6 +539,7 @@ void read_Proximidade() {
 <hr>
 
 Objetivo: Lê a distância medida pelo sensor de proximidade ultrassônico.
+<br>
 Ação: Dispara um pulso ultrassônico e mede o tempo de retorno.
 Calcula a distância em metros.
 Exibe o valor no LCD.
