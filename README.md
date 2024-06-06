@@ -634,4 +634,4 @@ Aqui, vamos chamar nossas funções principais já declaradas para termos uma me
 
 <hr>
  
-<center>Este projeto encontra sob a <a href="path">MIT License.</a></center>
+<center>Este projeto encontra sob a <a href="https://github.com/KStiliano/GS-Edge-Computing/blob/main/LICENSE">MIT License.</a></center>
