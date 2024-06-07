@@ -250,6 +250,7 @@ void sonarBeep(int qntdBeeps = 3) {
     delay(1500);
     noTone(buzzerPin);
     delay(1500);
+    i++;
   }
 }
 ```
