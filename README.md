@@ -8,6 +8,11 @@
  
 <img src="https://github.com/KStiliano/GS-Edge-Computing/blob/main/arduino-sketch.png" alt="print do circuito Arduino/printscreen Arduino circuit"/>
 
+Link da simulação no <a href="https://wokwi.com/projects/399229434431228929">Wokwi</a>
+
+## Instruções
+O Wokwi está com um bug onde se você da uma certa quantidade de zoom algumas funcionalidades não irão aparecer no display.
+
 ## Explicação do Projeto 📖
 Um programa que mede:
 
