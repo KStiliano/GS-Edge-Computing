@@ -525,7 +525,6 @@ void read_Proximidade() {
   if (distance <= 50) {
     activateWhichLED(ledR);
     sonarBeep();
-    delay(2000);
     displayTwoLineText("Lixo", "detectado!");
   }
   else if (distance < 200) {
