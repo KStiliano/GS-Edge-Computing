@@ -246,9 +246,10 @@ Ação: Desliga todos os LEDs e liga o LED especificado.
 void sonarBeep(int qntdBeeps = 3) {
   int i = 0; 
   while (i < qntdBeeps){
-    tone(buzzerPin, 1000, 2000); // Sonar beep
+    tone(buzzerPin, 1000);
+    delay(1500);
     noTone(buzzerPin);
-    delay(1000);
+    delay(1500);
   }
 }
 ```
@@ -522,9 +523,9 @@ void read_Proximidade() {
 
   if (distance <= 50) {
     activateWhichLED(ledR);
+    sonarBeep();
     delay(2000);
     displayTwoLineText("Lixo", "detectado!");
-    sonarBeep();
   }
   else if (distance < 200) {
     activateWhichLED(ledY);
