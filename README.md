@@ -1,4 +1,4 @@
-# GS-Edge-Computing
+# GS - Edge Computing
 
 ## Integrantes 👋
 <ul>
