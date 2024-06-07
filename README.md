@@ -137,7 +137,7 @@ CH4, através do terceiro potenciômetro
  
 <br>
 
-## Explicando o <a href="path">Código</a> 🧑‍💻
+## Explicando o <a href="https://github.com/KStiliano/GS-Edge-Computing/blob/main/arduino-code.cc">Código</a> 🧑‍💻
  
 Precisamos incluir as bibliotecas para podermos ter acesso a métodos dos quais vamos precisar.
  
